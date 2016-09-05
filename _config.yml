@@ -6,7 +6,7 @@
 title: RSFP
 email:
 description: Scott Longwell's webzone
-url: http://slongwell.github.io
+url:
 
 
 #
@@ -43,7 +43,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: UA-73781724-1
+    analytics: "UA-73781724-1"
     verify:
     ad-client:
     ad-slot:
