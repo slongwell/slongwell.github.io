@@ -25,8 +25,8 @@ permalink: /archive/
     <ul>
     {% endif %}
     {% endunless %}
-    <li>
-      <div style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+    <li style="transform: translateX(-5px)">
+      <div style="width:60px;float:left">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
 
