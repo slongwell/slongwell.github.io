@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Aliases, Symlinks, Hardlinks: Not Synonyms</title>
-  <meta name="description" content="Aliases: Aliases are specific to the Finder. They don’t exist in .">
+  <title>Aliases, Symlinks, Hardlinks: Not Aliases</title>
+  <meta name="description" content="On Unix, there are two main types of links: symbolic links (aka symlinks, soft links) and hardlinks. Mac OS X adds a third to the mix via the Finder: aliases...">
 
   <!-- CSS files -->
   <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -174,7 +174,7 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="Aliases, Symlinks, Hardlinks: Not Synonyms">Aliases, Symlinks, Hardlinks: Not Synonyms</h1>
+    <h1 title="Aliases, Symlinks, Hardlinks: Not Aliases">Aliases, Symlinks, Hardlinks: Not Aliases</h1>
     <span class="post-meta">
       <span class="post-date">
         4 SEP 2016
@@ -192,9 +192,17 @@
   </header>
 
   <article class="post-content">
-    <p>Aliases: Aliases are specific to the Finder. They don’t exist in .</p>
+    <p>On Unix, there are two main types of links: <em>symbolic links</em> (aka symlinks, soft links) and <em>hardlinks</em>. Mac OS X adds a third to the mix via the Finder: aliases. These are different than</p>
 
 <!--more-->
+<p>Hardlinks: <code class="highlighter-rouge">ln source target</code></p>
+
+<p>Symlinks: <code class="highlighter-rouge">ln -s source target</code></p>
+
+<p>Aliases: <code class="highlighter-rouge">osascript -e 'tell application "Finder" to make alias file to POSIX file "/file/to/make/link/from" at POSIX file "/folder/where/to/make/link"</code></p>
+
+<p>` 
+Aliases are created by the Finder application. Note: they are distinct from bash aliases. In a sense, they subsume symlinks and hardlinks. Clicking on an alias makes</p>
 
 
   </article>
