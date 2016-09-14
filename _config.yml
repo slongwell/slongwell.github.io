@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: RSFP
+title: rsfp
 email:
 description: Scott Longwell's webzone
 url:
@@ -33,7 +33,7 @@ kramdown:
 ####################################
 #
 owner:
-  name: RSFP
+  name: rsfp
   avatar: longwell_photo.jpg
   job: "Scott Longwell"
   bio: ""
