@@ -157,16 +157,17 @@
     <input type="text" placeholder="Search blag posts " class="super-search__input" id="js-super-search__input">
     <ul class="super-search__results" id="js-super-search__results"></ul>
   </div>
-  
-  <div>
-    <ul style="list-style:none">
-      <li>Also check out:</li>
-      <li><a href="http://www.fordycelab.com/">Fordyce Lab</a></li>
-      <li><a href="http://alexhwilliams.info/itsneuronalblog/">It's Neuronal</a></li>
-    </ul>
-  </div>
+
+  <ul style="list-style:none;position:relative;bottom:0%;">
+    <li>Also check out:</li>
+    <li><a href="http://www.fordycelab.com/">Fordyce Lab</a></li>
+    <li><a href="http://alexhwilliams.info/itsneuronalblog/">It's Neuronal</a></li>
+  </ul>
+
 
 </div>
+
+
 
 
 
@@ -201,7 +202,17 @@
     
     <div class="post-description">
       <p>
-        <p>On Unix, there are two main types of links: <em>symbolic links</em> (aka symlinks, soft links) and <em>hardlinks</em>. Mac OS X adds a third to the mix via the Finder: <em>aliases</em>. These are different than…</p>
+        <p>Hardlinks: <code class="highlighter-rouge">ln source target</code></p>
+
+<p>Symlinks: <code class="highlighter-rouge">ln -s source target</code></p>
+
+<p>Aliases: <a href="http://stackoverflow.com/questions/7072208/how-do-i-create-a-macintosh-finder-alias-from-the-command-line">see here</a></p>
+
+<p>On Unix, there are two main types of links: <em>symbolic links</em> and <em>hardlinks</em>. Mac OS X adds a third to the mix via the Finder: <em>aliases</em>. These are different than…</p>
+
+<p>In general, making a shortcut involves
+source: the existing file/folder
+target:	the ‘link’ that will be created</p>
 
 
       </p>
@@ -245,7 +256,7 @@
 
 
         <footer>
-  &copy; 2016 RSFP. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, based on <a href="http://github.com/renyuanz/leonids/">leonids</a> theme.
+  &copy; 2016 RSFP.  &nbsp;Powered by <a href="http://jekyllrb.com/">Jekyll</a>, based on <a href="http://github.com/renyuanz/leonids/">leonids</a> theme.
 </footer>
 
       </div>

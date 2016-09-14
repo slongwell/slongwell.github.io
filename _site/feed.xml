@@ -5,23 +5,28 @@
     <description>Scott Longwell's webzone</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Sep 2016 03:46:15 -0700</pubDate>
-    <lastBuildDate>Mon, 05 Sep 2016 03:46:15 -0700</lastBuildDate>
+    <pubDate>Tue, 13 Sep 2016 10:00:00 -0700</pubDate>
+    <lastBuildDate>Tue, 13 Sep 2016 10:00:00 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Aliases, Symlinks, Hardlinks: Not Aliases</title>
-        <description>&lt;p&gt;On Unix, there are two main types of links: &lt;em&gt;symbolic links&lt;/em&gt; (aka symlinks, soft links) and &lt;em&gt;hardlinks&lt;/em&gt;. Mac OS X adds a third to the mix via the Finder: &lt;em&gt;aliases&lt;/em&gt;. These are different than…&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;Hardlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln source target&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Hardlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln source target&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Symlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln -s source target&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Aliases: &lt;code class=&quot;highlighter-rouge&quot;&gt;osascript -e 'tell application &quot;Finder&quot; to make alias file to POSIX file &quot;/file/to/make/link/from&quot; at POSIX file &quot;/folder/where/to/make/link&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Aliases: &lt;a href=&quot;http://stackoverflow.com/questions/7072208/how-do-i-create-a-macintosh-finder-alias-from-the-command-line&quot;&gt;see here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;` 
-Aliases are created by the Finder application. Note: they are distinct from bash aliases. In a sense, they subsume symlinks and hardlinks. Clicking on an alias makes&lt;/p&gt;
+&lt;p&gt;On Unix, there are two main types of links: &lt;em&gt;symbolic links&lt;/em&gt; and &lt;em&gt;hardlinks&lt;/em&gt;. Mac OS X adds a third to the mix via the Finder: &lt;em&gt;aliases&lt;/em&gt;. These are different than…&lt;/p&gt;
+
+&lt;p&gt;In general, making a shortcut involves
+source: the existing file/folder
+target:	the ‘link’ that will be created&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;Symbolic link (aka symlink, softlink) points to a file or folder at a specific path. Thus&lt;/p&gt;
+
+&lt;p&gt;Aliases are created by the Finder application; thus, there Note: they are distinct from bash aliases. In a sense, they subsume symlinks and hardlinks. Clicking on an alias makes&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 04 Sep 2016 18:06:19 -0700</pubDate>
