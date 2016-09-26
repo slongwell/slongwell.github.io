@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Karabiner is Karabroken on macOS Sierra. Here's a Temporary Solution."
-date:   2015-09-25 22:36:00
+date:   2016-09-25 22:36:00
 comments: true
 ---
 I've used [Karabiner][kb] for Mac to embed my arrow keys in a Diamond-style configuration - in other words, `j-l-i-k` maps to `left-right-up-down`. This configuration is active when the caps lock key is held. (*Note*: the [Seil][seil] utility is specifically required for remapping `CAPS`. I remapped `CAPS` to `CTRL_R`, which is not present on my MBP. Consequently, `CTRL_R` is technically the modifier key). I've similarly embedded `BKSP` and `DEL` as the `o` and `p` keys and added additional 'super-modifier' keys: `f` to signify 'word at a time' (e.g. `CAPS-f-j` jumps back a word), `d` to go to beginning/end of line, and `s` to highlight a selection. Karabiner can also detect the vendor ID associated with a connected keyboard, so it can apply specific remappings to specific keyboards (e.g. the command and option keys can be switched for a PC keyboard while leaving the bindings for the built-in MBP keyboard unaltered). Finally, I've been experimenting with using `CMD_R` as a key for exposing all windows and as a toggle key for switching between spaces using `j` and `l`. If you're curious about implementing any of these features, see my `private.xml` file [here][private].
@@ -70,6 +70,8 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 *Note*: Before these changes take effect in a given application, the application must be restarted. A full computer restart is ideal.
 
 The resulting mapping is far less powerful - it lacks 'super-modifier' keys, keyboard vendor ID detection, and the ability to discern left and right `CTRL/OPT` keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I'm only scratching the surface - I'm sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I'd suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.
+
+Update: the keybindings do not appear to pass through to terminal :(
 
 See also:   
 [Customizing the Cocoa Text System][a]  
