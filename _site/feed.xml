@@ -5,28 +5,40 @@
     <description>Scott Longwell's webzone</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Sep 2016 23:55:17 -0700</pubDate>
-    <lastBuildDate>Tue, 13 Sep 2016 23:55:17 -0700</lastBuildDate>
+    <pubDate>Sun, 25 Sep 2016 23:21:10 -0700</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2016 23:21:10 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Aliases, Symlinks, Hardlinks: Not Aliases</title>
-        <description>&lt;p&gt;Hardlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln source target&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Symlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln -s source target&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Symlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln -s source target&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Hardlinks: &lt;code class=&quot;highlighter-rouge&quot;&gt;ln source target&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Aliases: &lt;a href=&quot;http://stackoverflow.com/questions/7072208/how-do-i-create-a-macintosh-finder-alias-from-the-command-line&quot;&gt;see here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;On Unix, there are two main types of links: &lt;em&gt;symbolic links&lt;/em&gt; and &lt;em&gt;hardlinks&lt;/em&gt;. Mac OS X adds a third to the mix via the Finder: &lt;em&gt;aliases&lt;/em&gt;. These are different than…&lt;/p&gt;
+&lt;p&gt;In general, making a shortcut involves a &lt;em&gt;source&lt;/em&gt; and &lt;em&gt;target&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;source: the existing file/folder&lt;/li&gt;
+  &lt;li&gt;target: the ‘link’ that will be created 
+&lt;!--more--&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;In general, making a shortcut involves
-source: the existing file/folder
-target:	the ‘link’ that will be created&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;!--more--&gt;
-&lt;p&gt;Symbolic link (aka symlink, softlink) points to a file or folder at a specific path. Thus&lt;/p&gt;
+&lt;p&gt;On Unix, there are two main types of links: &lt;em&gt;symbolic links&lt;/em&gt; and &lt;em&gt;hardlinks&lt;/em&gt;. Mac OS X adds a third to the mix via the Finder: &lt;em&gt;aliases&lt;/em&gt;. While all three can be thought of as ‘shortcuts’, they have distinct behaviors that are important to note:&lt;/p&gt;
 
-&lt;p&gt;Aliases are created by the Finder application; thus, there Note: they are distinct from bash aliases. In a sense, they subsume symlinks and hardlinks. Clicking on an alias makes&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Symbolic links (aka symlinks, softlinks) point to a file or folder at a specific path. If the source file is moved, the link will be broken.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hardlinks are to a specific source &lt;a href=&quot;https://en.wikipedia.org/wiki/Inode&quot;&gt;inode&lt;/a&gt;, which uniquely identifies a file. If the source file is moved, the link will persist.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Aliases are created by the Finder application. (&lt;em&gt;Note&lt;/em&gt;: they are distinct from bash command aliases.) In a sense, they subsume symlinks and hardlinks. When an alias is clicked, it first behaves like a symlink, checking the source path. If no file is present at the source path, the system will then search for the inode of the original file.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
         <pubDate>Sun, 04 Sep 2016 18:06:19 -0700</pubDate>
@@ -37,13 +49,89 @@ target:	the ‘link’ that will be created&lt;/p&gt;
       </item>
     
       <item>
-        <title>temp</title>
-        <description>&lt;p&gt;Temp post.&lt;/p&gt;
+        <title>Karabiner is Karabroken on macOS Sierra. Here's a Temporary Solution.</title>
+        <description>&lt;p&gt;I’ve used &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt; for Mac to embed my arrow keys in a Diamond-style configuration - in other words, &lt;code class=&quot;highlighter-rouge&quot;&gt;j-l-i-k&lt;/code&gt; maps to &lt;code class=&quot;highlighter-rouge&quot;&gt;left-right-up-down&lt;/code&gt;. This configuration is active when the caps lock key is held. (&lt;em&gt;Note&lt;/em&gt;: the &lt;a href=&quot;https://pqrs.org/osx/karabiner/seil.html.en&quot;&gt;Seil&lt;/a&gt; utility is specifically required for remapping &lt;code class=&quot;highlighter-rouge&quot;&gt;CAPS&lt;/code&gt;. I remapped &lt;code class=&quot;highlighter-rouge&quot;&gt;CAPS&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL_R&lt;/code&gt;, which is not present on my MBP. Consequently, &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL_R&lt;/code&gt; is technically the modifier key). I’ve similarly embedded &lt;code class=&quot;highlighter-rouge&quot;&gt;BKSP&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DEL&lt;/code&gt; as the &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; keys and added additional ‘super-modifier’ keys: &lt;code class=&quot;highlighter-rouge&quot;&gt;f&lt;/code&gt; to signify ‘word at a time’ (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;CAPS-f-j&lt;/code&gt; jumps back a word), &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; to go to beginning/end of line, and &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; to highlight a selection. Karabiner can also detect the vendor ID associated with a connected keyboard, so it can apply specific remappings to specific keyboards (e.g. the command and option keys can be switched for a PC keyboard while leaving the bindings for the built-in MBP keyboard unaltered). Finally, I’ve been experimenting with using &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD_R&lt;/code&gt; as a key for exposing all windows and as a toggle key for switching between spaces using &lt;code class=&quot;highlighter-rouge&quot;&gt;j&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;l&lt;/code&gt;. If you’re curious about implementing any of these features, see my &lt;code class=&quot;highlighter-rouge&quot;&gt;private.xml&lt;/code&gt; file &lt;a href=&quot;/files/private.xml&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I recently updated to macOS Sierra from El Cap, which to my dismay caused Karbiner and Seil to stop working. &lt;a href=&quot;https://pqrs.org/profile.html.en&quot;&gt;The author&lt;/a&gt; (bless him) is hard at work on a new version called &lt;a href=&quot;https://github.com/tekezo/Karabiner-Elements&quot;&gt;Karabiner-Elements&lt;/a&gt;. However, the early release (v0.90.40) does not have a usable GUI interface and only supports basic behavior like switching keys.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, macOS features &lt;a href=&quot;https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html#//apple_ref/doc/uid/20000468-CJBDEADF&quot;&gt;built-in support&lt;/a&gt; for altering keybindings by creating a &lt;a href=&quot;https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html&quot;&gt;property list&lt;/a&gt; (.dict file) in the user library directory. This property list can be written in either XML or the ‘old-ASCII/NeXT’ style (the example below uses the old-style). A complete listing of possible actions is available in the &lt;a href=&quot;https://developer.apple.com/reference/appkit/nsresponder&quot;&gt;developer documentation&lt;/a&gt; for the macOS API.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;My workaround uses Karabiner-Elements to do the heavy lifting to remap &lt;code class=&quot;highlighter-rouge&quot;&gt;CAPS&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL_R&lt;/code&gt;. When either &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL&lt;/code&gt; key is held, a property list specifies the arrow keys as &lt;code class=&quot;highlighter-rouge&quot;&gt;jlik&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;BKSP&lt;/code&gt; as &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;DEL&lt;/code&gt; as &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Disclaimer: &lt;a href=&quot;https://cdn-images-1.medium.com/max/600/1*snTXFElFuQLSFDnvZKJ6IA.png&quot;&gt;I’ve&lt;/a&gt; never taken a class in operating systems.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://github.com/tekezo/Karabiner-Elements/tree/master/usage&quot;&gt;Karabiner-Elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Karabiner-Elements, remap &lt;code class=&quot;highlighter-rouge&quot;&gt;CAPS&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL_R&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;In terminal&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; mkdir -p ~/.karabiner.d/configuration/
+ cd ~/.karabiner.d/configuration/  
+ touch karabiner.json  
+ open karabiner.json  
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;em&gt;Into the text editor that opens, paste and save&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;profiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Default profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;selected&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;simple_modifications&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                 &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;caps_lock&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;right_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the user library, create a keybinding property list:&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;In terminal&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; mkdir -p ~/Library/KeyBindings
+ cd ~/Library/KeyBindings
+ touch DefaultKeyBinding.dict
+ open DefaultKeyBinding.dict
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;em&gt;Into the text editor that opens, paste and save&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Diamond&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;arrows&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^j&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;moveBackward:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^l&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;moveForward:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^i&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;moveUp:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^k&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;moveDown:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+  
+     &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Backspace;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Delete&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^o&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;deleteBackward:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;^;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;deleteForward:&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: Before these changes take effect in a given application, the application must be restarted. A full computer restart is ideal.&lt;/p&gt;
+
+&lt;p&gt;The resulting mapping is far less powerful - it lacks ‘super-modifier’ keys, keyboard vendor ID detection, and the ability to discern left and right &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL/OPT&lt;/code&gt; keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I’m only scratching the surface - I’m sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I’d suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 04 Sep 2010 18:06:19 -0700</pubDate>
-        <link>/articles/2010-09/temp</link>
-        <guid isPermaLink="true">/articles/2010-09/temp</guid>
+        <pubDate>Fri, 25 Sep 2015 15:36:00 -0700</pubDate>
+        <link>/articles/2015-09/karabiner-workaround</link>
+        <guid isPermaLink="true">/articles/2015-09/karabiner-workaround</guid>
         
         
       </item>
