@@ -71,6 +71,11 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 
 The resulting mapping is far less powerful - it lacks 'super-modifier' keys, keyboard vendor ID detection, and the ability to discern left and right `CTRL/OPT` keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I'm only scratching the surface - I'm sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I'd suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.
 
+See also:   
+[Customizing the Cocoa Text System][a]  
+[How to Create Keyboard Layout and Keybinding][b]  
+[KeyBindingsEditor][c]  
+
 
 [kb]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
@@ -85,4 +90,8 @@ The resulting mapping is far less powerful - it lacks 'super-modifier' keys, key
 
 [noidea]: https://cdn-images-1.medium.com/max/600/1*snTXFElFuQLSFDnvZKJ6IA.png
 
+
+[a]: http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html
+[b]: http://xahlee.info/kbd/osx_keybinding.html
+[c]: hhttp://www.cocoabits.com/KeyBindingsEditor/
 

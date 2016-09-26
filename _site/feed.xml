@@ -5,8 +5,8 @@
     <description>Scott Longwell's webzone</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Sep 2016 23:21:10 -0700</pubDate>
-    <lastBuildDate>Sun, 25 Sep 2016 23:21:10 -0700</lastBuildDate>
+    <pubDate>Sun, 25 Sep 2016 23:35:42 -0700</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2016 23:35:42 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -127,6 +127,11 @@
 &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: Before these changes take effect in a given application, the application must be restarted. A full computer restart is ideal.&lt;/p&gt;
 
 &lt;p&gt;The resulting mapping is far less powerful - it lacks ‘super-modifier’ keys, keyboard vendor ID detection, and the ability to discern left and right &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL/OPT&lt;/code&gt; keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I’m only scratching the surface - I’m sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I’d suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.&lt;/p&gt;
+
+&lt;p&gt;See also: &lt;br /&gt;
+&lt;a href=&quot;http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html&quot;&gt;Customizing the Cocoa Text System&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://xahlee.info/kbd/osx_keybinding.html&quot;&gt;How to Create Keyboard Layout and Keybinding&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;hhttp://www.cocoabits.com/KeyBindingsEditor/&quot;&gt;KeyBindingsEditor&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 25 Sep 2015 15:36:00 -0700</pubDate>
