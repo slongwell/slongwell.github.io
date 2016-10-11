@@ -24,7 +24,7 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 2. In Karabiner-Elements, remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>:
 
 
-    Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the `karabiner.json` config file; since this config file has slight changes in format, it may be in conflict with manually created ones.
+    Update: The 'manual' actions below are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now facilitate simple key swaps via the GUI. Note that Karabiner-Elements will automatically create/modify the `karabiner.json` config file; since this config file has slight changes in format, it may be in conflict with manually created ones.
 
     *In terminal*: 
     
@@ -78,8 +78,8 @@ The resulting mapping is far less powerful - it lacks 'super-modifier' keys, key
 
 Updates:  
 
-* These keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime)
-* A similar <kbr>CAPS</kbr> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
+* Unfortunately, these keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime).
+* A similar <kbd>CAPS</kbd> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
 
 See also:   
 [Customizing the Cocoa Text System][a]  
