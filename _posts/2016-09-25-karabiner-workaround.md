@@ -79,7 +79,7 @@ The resulting mapping is far less powerful - it lacks 'super-modifier' keys, key
 Updates:  
 
 * Unfortunately, these keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime).
-* A similar <kbd>CAPS</kbd> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
+* A similar <kbd>CAPS</kbd> to <kbd>CTRL</kbd> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
 
 See also:   
 [Customizing the Cocoa Text System][a]  
