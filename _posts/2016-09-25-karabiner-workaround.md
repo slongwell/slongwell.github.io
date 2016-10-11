@@ -4,7 +4,7 @@ title:  "Karabiner is Karabroken on macOS Sierra. Here's a Temporary Solution."
 date:   2016-09-25 22:36:00
 comments: true
 ---
-I've used [Karabiner][kb] for Mac to embed my arrow keys in a Diamond-style configuration - in other words, `j-l-i-k` maps to `left-right-up-down`. This configuration is active when the caps lock key is held. (*Note*: the [Seil][seil] utility is specifically required for remapping `CAPS`. I remapped `CAPS` to `CTRL_R`, which is not present on my MBP. Consequently, `CTRL_R` is technically the modifier key). I've similarly embedded `BKSP` and `DEL` as the `o` and `p` keys and added additional 'super-modifier' keys: `f` to signify 'word at a time' (e.g. `CAPS-f-j` jumps back a word), `d` to go to beginning/end of line, and `s` to highlight a selection. Karabiner can also detect the vendor ID associated with a connected keyboard, so it can apply specific remappings to specific keyboards (e.g. the command and option keys can be switched for a PC keyboard while leaving the bindings for the built-in MBP keyboard unaltered). Finally, I've been experimenting with using `CMD_R` as a key for exposing all windows and as a toggle key for switching between spaces using `j` and `l`. If you're curious about implementing any of these features, see my `private.xml` file [here][private].
+I've used [Karabiner][kb] for Mac to embed my arrow keys in a Diamond-style configuration - in other words, <kbd>j-l-i-k</kbd> maps to <kbd>left-right-up-down</kbd>. This configuration is active when the caps lock key is held. (*Note*: the [Seil][seil] utility is specifically required for remapping <kbd>CAPS</kbd>. I remapped <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>, which is not present on my MBP. Consequently, <kbd>CTRL_R</kbd> is technically the modifier key). I've similarly embedded <kbd>BKSP</kbd> and <kbd>DEL</kbd> as the <kbd>o</kbd> and <kbd>p</kbd> keys and added additional 'super-modifier' keys: <kbd>f</kbd> to signify 'word at a time' (e.g. <kbd>CAPS-f-j</kbd> jumps back a word), <kbd>d</kbd> to go to beginning/end of line, and <kbd>s</kbd> to highlight a selection. Karabiner can also detect the vendor ID associated with a connected keyboard, so it can apply specific remappings to specific keyboards (e.g. the command and option keys can be switched for a PC keyboard while leaving the bindings for the built-in MBP keyboard unaltered). Finally, I've been experimenting with using <kbd>CMD_R</kbd> as a key for exposing all windows and as a toggle key for switching between spaces using <kbd>j</kbd> and <kbd>l</kbd>. If you're curious about implementing any of these features, see my `private.xml` file [here][private].
 
 <!--more-->
 
@@ -14,12 +14,17 @@ Fortunately, macOS features [built-in support][cocoa] for altering keybindings b
 
 ***
 
-My workaround uses Karabiner-Elements to do the heavy lifting to remap `CAPS` to `CTRL_R`. When either `CTRL` key is held, a property list specifies the arrow keys as `jlik`, `BKSP` as `o`, and `DEL` as `;`.  
+My workaround uses Karabiner-Elements to do the heavy lifting to remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>. When either <kbd>CTRL</kbd> key is held, a property list specifies the arrow keys as <kbd>jlik</kbd>, <kbd>BKSP</kbd> as <kbd>o</kbd>, and <kbd>DEL</kbd> as <kbd>;</kbd>.  
 
-Disclaimer: [I've][noidea] never taken a class in operating systems.
+Disclaimer: [I've][noidea] never taken a class in operating systems.  
+
+
 
 1. Install [Karabiner-Elements][kbeu]
-2. In Karabiner-Elements, remap `CAPS` to `CTRL_R`:
+2. In Karabiner-Elements, remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>:
+
+
+    Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the `karabiner.json` config file; since this config file has slight changes in format, it may be in conflict with existing ones.
 
     *In terminal*: 
     
@@ -69,9 +74,11 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 
 *Note*: Before these changes take effect in a given application, the application must be restarted. A full computer restart is ideal.
 
-The resulting mapping is far less powerful - it lacks 'super-modifier' keys, keyboard vendor ID detection, and the ability to discern left and right `CTRL/OPT` keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I'm only scratching the surface - I'm sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I'd suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.
+The resulting mapping is far less powerful - it lacks 'super-modifier' keys, keyboard vendor ID detection, and the ability to discern left and right <kbd>CTRL/OPT</kbd> keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I'm only scratching the surface - I'm sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I'd suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.
 
-Update: the keybindings do not appear to pass through to terminal :(
+Updates:  
+* These keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime)
+* A similar <kbr>CAPS</kbr> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
 
 See also:   
 [Customizing the Cocoa Text System][a]  
