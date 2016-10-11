@@ -24,7 +24,7 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 2. In Karabiner-Elements, remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>:
 
 
-    Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the `karabiner.json` config file; since this config file has slight changes in format, it may be in conflict with existing ones.
+    Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the `karabiner.json` config file; since this config file has slight changes in format, it may be in conflict with manually created ones.
 
     *In terminal*: 
     
