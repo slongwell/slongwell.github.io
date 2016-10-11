@@ -77,6 +77,7 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 The resulting mapping is far less powerful - it lacks 'super-modifier' keys, keyboard vendor ID detection, and the ability to discern left and right <kbd>CTRL/OPT</kbd> keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I'm only scratching the surface - I'm sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I'd suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.
 
 Updates:  
+
 * These keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime)
 * A similar <kbr>CAPS</kbr> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to `System Preferences > Keyboard::Keyboard > Modifier Keys...`. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.
 
