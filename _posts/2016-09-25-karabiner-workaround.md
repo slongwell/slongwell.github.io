@@ -54,9 +54,9 @@ Disclaimer: [I've][noidea] never taken a class in operating systems.
 	    mkdir -p ~/Library/KeyBindings
 	    cd ~/Library/KeyBindings
 	    touch DefaultKeyBinding.dict
-	    open DefaultKeyBinding.dict
+	    open -a TextEdit DefaultKeyBinding.dict
 
-	*Into the text editor that opens, paste and save*:  
+	*Into the TextEdit window that opens, paste and save*:  
 	
         {  
 	        /* Diamond arrows */  
@@ -84,7 +84,8 @@ Updates:
 See also:   
 [Customizing the Cocoa Text System][a]  
 [How to Create Keyboard Layout and Keybinding][b]  
-[KeyBindingsEditor][c]  
+[KeyBindingsEditor][c]
+[Mac OS X Key Bindings][d]  
 
 
 [kb]: https://pqrs.org/osx/karabiner/
@@ -100,8 +101,7 @@ See also:
 
 [noidea]: https://cdn-images-1.medium.com/max/600/1*snTXFElFuQLSFDnvZKJ6IA.png
 
-
 [a]: http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html
 [b]: http://xahlee.info/kbd/osx_keybinding.html
 [c]: hhttp://www.cocoabits.com/KeyBindingsEditor/
-
+[d]: http://sbnes.livejournal.com/3725.html

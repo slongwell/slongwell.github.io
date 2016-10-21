@@ -226,7 +226,7 @@
   <li>
     <p>In Karabiner-Elements, remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>:</p>
 
-    <p>Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the <code class="highlighter-rouge">karabiner.json</code> config file; since this config file has slight changes in format, it may be in conflict with existing ones.</p>
+    <p>Update: The ‘manual’ actions below are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now facilitate simple key swaps via the GUI. Note that Karabiner-Elements will automatically create/modify the <code class="highlighter-rouge">karabiner.json</code> config file; since this config file has slight changes in format, it may be in conflict with manually created ones.</p>
 
     <p><em>In terminal</em>:</p>
 
@@ -261,11 +261,11 @@
     <div class="highlighter-rouge"><pre class="highlight"><code> mkdir -p ~/Library/KeyBindings
  cd ~/Library/KeyBindings
  touch DefaultKeyBinding.dict
- open DefaultKeyBinding.dict
+ open -a TextEdit DefaultKeyBinding.dict
 </code></pre>
     </div>
 
-    <p><em>Into the text editor that opens, paste and save</em>:</p>
+    <p><em>Into the TextEdit window that opens, paste and save</em>:</p>
 
     <div class="highlighter-rouge"><pre class="highlight"><code><span class="w"> </span><span class="p">{</span><span class="w">  
      </span><span class="err">/*</span><span class="w"> </span><span class="err">Diamond</span><span class="w"> </span><span class="err">arrows</span><span class="w"> </span><span class="err">*/</span><span class="w">  
@@ -288,15 +288,17 @@
 <p>The resulting mapping is far less powerful - it lacks ‘super-modifier’ keys, keyboard vendor ID detection, and the ability to discern left and right <kbd>CTRL/OPT</kbd> keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I’m only scratching the surface - I’m sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I’d suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.</p>
 
 <p>Updates:</p>
+
 <ul>
-  <li>These keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime)</li>
-  <li>A similar <kbr>CAPS</kbr> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to <code class="highlighter-rouge">System Preferences &gt; Keyboard::Keyboard &gt; Modifier Keys...</code>. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.</li>
+  <li>Unfortunately, these keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime).</li>
+  <li>A similar <kbd>CAPS</kbd> to <kbd>CTRL</kbd> remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to <code class="highlighter-rouge">System Preferences &gt; Keyboard::Keyboard &gt; Modifier Keys...</code>. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.</li>
 </ul>
 
 <p>See also: <br />
 <a href="http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html">Customizing the Cocoa Text System</a><br />
 <a href="http://xahlee.info/kbd/osx_keybinding.html">How to Create Keyboard Layout and Keybinding</a><br />
-<a href="hhttp://www.cocoabits.com/KeyBindingsEditor/">KeyBindingsEditor</a></p>
+<a href="hhttp://www.cocoabits.com/KeyBindingsEditor/">KeyBindingsEditor</a>
+<a href="http://sbnes.livejournal.com/3725.html">Mac OS X Key Bindings</a></p>
 
 
   </article>

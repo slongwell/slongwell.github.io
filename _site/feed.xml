@@ -5,8 +5,8 @@
     <description>Scott Longwell's webzone</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Oct 2016 15:37:16 -0700</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2016 15:37:16 -0700</lastBuildDate>
+    <pubDate>Thu, 20 Oct 2016 19:24:26 -0700</pubDate>
+    <lastBuildDate>Thu, 20 Oct 2016 19:24:26 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -30,7 +30,7 @@
   &lt;li&gt;
     &lt;p&gt;In Karabiner-Elements, remap &lt;kbd&gt;CAPS&lt;/kbd&gt; to &lt;kbd&gt;CTRL_R&lt;/kbd&gt;:&lt;/p&gt;
 
-    &lt;p&gt;Update: The below actions are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now have GUI support for simple modifications. Note that Karabiner-Elements will automatically create/modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;karabiner.json&lt;/code&gt; config file; since this config file has slight changes in format, it may be in conflict with existing ones.&lt;/p&gt;
+    &lt;p&gt;Update: The ‘manual’ actions below are no longer necessary, as recent versions of Karabiner-Elements (~v90.48, noted 2016-10-10) now facilitate simple key swaps via the GUI. Note that Karabiner-Elements will automatically create/modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;karabiner.json&lt;/code&gt; config file; since this config file has slight changes in format, it may be in conflict with manually created ones.&lt;/p&gt;
 
     &lt;p&gt;&lt;em&gt;In terminal&lt;/em&gt;:&lt;/p&gt;
 
@@ -65,11 +65,11 @@
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; mkdir -p ~/Library/KeyBindings
  cd ~/Library/KeyBindings
  touch DefaultKeyBinding.dict
- open DefaultKeyBinding.dict
+ open -a TextEdit DefaultKeyBinding.dict
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    &lt;p&gt;&lt;em&gt;Into the text editor that opens, paste and save&lt;/em&gt;:&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Into the TextEdit window that opens, paste and save&lt;/em&gt;:&lt;/p&gt;
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
      &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Diamond&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;arrows&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
@@ -92,15 +92,17 @@
 &lt;p&gt;The resulting mapping is far less powerful - it lacks ‘super-modifier’ keys, keyboard vendor ID detection, and the ability to discern left and right &lt;kbd&gt;CTRL/OPT&lt;/kbd&gt; keys. However, it should be an effective stopgap until Karabiner-Elements reaches maturity. Likewise, I’m only scratching the surface - I’m sure these missing features are possible (and probably easy) to implement, and, without delving into source code, I’d suspect Karabiner itself interacts with macOS in a similar manner, albeit with a C-based API.&lt;/p&gt;
 
 &lt;p&gt;Updates:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;These keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime)&lt;/li&gt;
-  &lt;li&gt;A similar &lt;kbr&gt;CAPS&lt;/kbr&gt; remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to &lt;code class=&quot;highlighter-rouge&quot;&gt;System Preferences &amp;gt; Keyboard::Keyboard &amp;gt; Modifier Keys...&lt;/code&gt;. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.&lt;/li&gt;
+  &lt;li&gt;Unfortunately, these keybindings do not appear to override application-specific keybindings (e.g. in Terminal, Sublime).&lt;/li&gt;
+  &lt;li&gt;A similar &lt;kbd&gt;CAPS&lt;/kbd&gt; to &lt;kbd&gt;CTRL&lt;/kbd&gt; remapping can be performed natively without Karabiner-Elements (i.e. without Steps 1,2 above) by going to &lt;code class=&quot;highlighter-rouge&quot;&gt;System Preferences &amp;gt; Keyboard::Keyboard &amp;gt; Modifier Keys...&lt;/code&gt;. Unlike Karabiner-Elements, this approach cannot distinguish between left and right modifier keys.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;See also: &lt;br /&gt;
 &lt;a href=&quot;http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html&quot;&gt;Customizing the Cocoa Text System&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://xahlee.info/kbd/osx_keybinding.html&quot;&gt;How to Create Keyboard Layout and Keybinding&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;hhttp://www.cocoabits.com/KeyBindingsEditor/&quot;&gt;KeyBindingsEditor&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;hhttp://www.cocoabits.com/KeyBindingsEditor/&quot;&gt;KeyBindingsEditor&lt;/a&gt;
+&lt;a href=&quot;http://sbnes.livejournal.com/3725.html&quot;&gt;Mac OS X Key Bindings&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 25 Sep 2016 15:36:00 -0700</pubDate>
@@ -119,6 +121,7 @@
 &lt;p&gt;Aliases: &lt;a href=&quot;http://stackoverflow.com/questions/7072208/how-do-i-create-a-macintosh-finder-alias-from-the-command-line&quot;&gt;see here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In general, making a shortcut involves a &lt;em&gt;source&lt;/em&gt; and &lt;em&gt;target&lt;/em&gt;:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;source: the existing file/folder&lt;/li&gt;
   &lt;li&gt;target: the ‘link’ that will be created 
