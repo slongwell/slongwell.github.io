@@ -84,7 +84,7 @@ Updates:
 See also:   
 [Customizing the Cocoa Text System][a]  
 [How to Create Keyboard Layout and Keybinding][b]  
-[KeyBindingsEditor][c]
+[KeyBindingsEditor][c]  
 [Mac OS X Key Bindings][d]  
 
 
