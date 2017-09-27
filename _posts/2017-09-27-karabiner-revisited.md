@@ -53,5 +53,5 @@ Have to use Windows? Me too. Use [AutoHotKey][ahk] with the following [script][a
 [private]: /files/private.xml
 [author]: https://pqrs.org/profile.html
 [ahk]: https://autohotkey.com/
-[ahk-script]: /files/sal-diamond.ahk
+[ahk-script]: /files/sal_diamond.ahk
 
