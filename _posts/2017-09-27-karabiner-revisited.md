@@ -10,9 +10,9 @@ One year ago, I [posted][oldpost] how updating to macOS Sierra broke the existin
 That day has come.
 
 <!--more-->
+***
 In the old Karabiner, there was a [`private.xml`][private] that could be used to define intricate key remappings. Now that K-E has its first stable release (v11.0.0), this functionality has returned in the form of [Complex Modifications][comp-mods], which are defined with `.json` config files instead of a `.xml` file. These files are stored in `~/.config/karabiner/assets/complex_modifications`.
 
-***
 To implement my favorite key mappings:
 
 1. Install the [latest version of K-E][ke_download]
@@ -45,7 +45,7 @@ So far, this implementation has been bug-free for me and has the added benefit o
 
 [comp-mods]: https://github.com/pqrs-org/KE-complex_modifications
 [ke_download]: https://pqrs.org/osx/karabiner/index.html
-[json]: karabiner://karabiner/assets/complex_modifications/import?url=http://slongwell.github.io/files/sal-diamond.xml
+[json]: karabiner://karabiner/assets/complex_modifications/import?url=https://slongwell.github.io/files/sal-diamond.json
 
 [private]: /files/private.xml
 [author]: https://pqrs.org/profile.html
