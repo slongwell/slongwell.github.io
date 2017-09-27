@@ -40,7 +40,7 @@ My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate m
 So far, this implementation has been bug-free for me and has the added benefit of compatibility with future K-E updates. In the future, I hope to add <kbd>s</kbd> as a <kbd>SHIFT</kbd> 'super-modifier', allowing easier highlighting with the diamond-arrow keys. Thanks again to the [author][author] of K-E for all his hard work!
 
 #### Bonus:
-Have to use Windows? Me too. Use [AutoHotKey][ahk] with the following [script][ahk-script] to get a similar remapping.
+Have to use Windows? Me too. Use [AutoHotKey][ahk] with this [script][ahk-script] to get a similar remapping.
 
 
 [oldpost]: http://slongwell.github.io/articles/2016-09/karabiner-workaround
