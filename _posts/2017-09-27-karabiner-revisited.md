@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Karabiner is No Longer Karabroken on macOS Sierra. Here's what I normally do."
+title:  "Karabiner(-Elements) is No Longer Karabroken. Here's what I normally do."
 date:   2017-09-27 11:00:00
 comments: true
 published: true
