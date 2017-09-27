@@ -13,7 +13,7 @@ That day has come.
 ***
 In the old Karabiner, there was a [`private.xml`][private] that could be used to define intricate key mappings. Now that K-E has its first stable release (v11.0.0), this functionality has returned in the form of [Complex Modifications][comp-mods], which are defined with `.json` config files instead of a `.xml` file. These files are stored in `~/.config/karabiner/assets/complex_modifications`.
 
-### To implement my favorite key mappings:
+#### To implement my favorite key mappings:
 
 1. Install the [latest version of K-E][ke_download]
 2. In `K-E > Simple Modifications`:
@@ -23,7 +23,7 @@ In the old Karabiner, there was a [`private.xml`][private] that could be used to
 4. In `K-E > Complex Modifications`:
 * Enable `ctrl_r + IJKL to arrows; ctrl_r + o/semi to backspace/delete`
 
-### This yields the following behavior:
+#### This yields the following behavior:
 
 General mappings:
 * <kbd>CAPS</kbd> maps to <kbd>CTRL_R</kbd> 
@@ -37,8 +37,11 @@ When <kbd>CTRL_R</kbd> (i.e. <kbd>CAPS</kbd>) is held:
 
 My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate modifier for <kbd>CAPS</kbd> (I've struggled to get the mappings to work directly with <kbd>CAPS</kbd>). Holding <kbd>f</kbd> (<kbd>OPT</kbd>) in addition to <kbd>CAPS</kbd> has the effect of making arrows and deletes occur 'word-at-a-time', permitting faster navigation and editing (I term this an <kbd>OPT</kbd> 'super-modifier'). I find the <kbd>CMD_R</kbd> mapping to Mission Control is a great way to quickly switch windows and desktops. 
 
-***
 So far, this implementation has been bug-free for me and has the added benefit of compatibility with future K-E updates. In the future, I hope to add <kbd>s</kbd> as a <kbd>SHIFT</kbd> 'super-modifier', allowing easier highlighting with the diamond-arrow keys. Thanks again to the [author][author] of K-E for all his hard work!
+
+#### Bonus:
+Have to use Windows? Me too. Use [AutoHotKey][ahk] with the following [script][ahk-script] to get a similar remapping.
+
 
 [oldpost]: http://slongwell.github.io/articles/2016-09/karabiner-workaround
 [dmg]: http://disq.us/p/1eflhzc
@@ -49,3 +52,6 @@ So far, this implementation has been bug-free for me and has the added benefit o
 
 [private]: /files/private.xml
 [author]: https://pqrs.org/profile.html
+[ahk]: https://autohotkey.com/
+[ahk-script]: /files/sal-diamond.ahk
+
