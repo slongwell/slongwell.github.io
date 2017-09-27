@@ -8,14 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Scott Longwell's webzone">
+  <title>Here's</title>
+  <meta name="description" content="Do you do top down proteomics?Do you see things that look like this?Then you can quickly estimate the mass of your protein with this formula:Where  and  are ...">
 
   <!-- CSS files -->
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="/archive/">
+  <link rel="canonical" href="/articles/2016-06/ms">
   <link rel="alternate" type="application/rss+xml" title="rsfp" href="/feed.xml " />
 
   <!-- Icons -->
@@ -183,54 +183,111 @@
     </div>
     <div class="col s12 m9">
       <div class="post-listing">
-          <div id="page">
-    <header class="page-header">
-      <h2>Archive</h2>
-    </header>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  displayAlign: "left",
+  displayIndent: "2em"
+});
+</script>
 
-    <article class="page-content">
-      <div class="archive">
-  <div class="timeline" id="timeline">
-    
-    
-    <div class="archive-title">
-      <h4 class="archive-year">2016</h4>
-    </div>
 
-    <ul>
-    
-    <li style="transform: translateX(-5px)">
-      <div style="width:60px;float:left">Sep 25</div> <a href="/articles/2016-09/karabiner-workaround">Karabiner is Karabroken on macOS Sierra. Here's a Temporary Solution.</a></li>
-    
-    
-      
-      
-    
-    
-    <li style="transform: translateX(-5px)">
-      <div style="width:60px;float:left">Sep 4</div> <a href="/articles/2016-09/aliases">Aliases, Symlinks, Hardlinks: Not Aliases</a></li>
-    
-    
-      
-      
-    
-    
-    <li style="transform: translateX(-5px)">
-      <div style="width:60px;float:left">Jun 2</div> <a href="/articles/2016-06/ms">Here's</a></li>
-    
-    </ul>
+<a class="btn" href= "/" >
+  Home
+</a>
 
-  </div>
 
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="Here's">Here's</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        2 JUN 2016
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <p>Do you do top down proteomics?
+Do you see things that look like this?</p>
+
+<p><img src="http://parsonsfamily.boldlygoingnowhere.org/~lparsons/upstate/massspec/Images/hhm-2min-2.png" alt="" /></p>
+
+<p>Then you can quickly estimate the mass of your protein with this formula:</p>
+
+<script type="math/tex; mode=display">M = \frac{(x_2 - H^+)(x_1 - H^+)}{x_2-x_1}</script>
+
+<p>Where <script type="math/tex">x_1</script> and <script type="math/tex">x_2</script> are the <script type="math/tex">(m/z)</script> of two adjacent peaks in the charge envelope.</p>
+
+<p>For example, taking the two largest consecutive peaks above, we have:</p>
+
+<p><script type="math/tex">x_1 = 998.37</script> m/z<br />
+<script type="math/tex">x_2 = 1060.65</script> m/z<br />
+<script type="math/tex">H^+ = 1.01</script> m/z</p>
+
+<script type="math/tex; mode=display">M = \frac{(1060.65 - 1.01)(998.37 - 1.01)}{1060.65 - 998.37} = 16969.21</script>
+
+<!--more-->
+<p>Want a better estimate?</p>
+
+<script type="math/tex; mode=display">z_1 = \frac{(x_2 - H^+)}{x_2-x_1} = \frac{(1060.65 - 1.01)}{1060.65 - 998.37} =</script>
+
+<p>Electro-spray Ionization (ESI) sources tend to produce multiply charged ions. Small molecules (<script type="math/tex">\sim300</script> m/z) typically give only 1-3 charges, but larger molecules can have dozens of charge states. This is in that it explodes things, reducing signal and making the spectrum more difficult to interpret. However, it can allow larger molecules, even 100 kDa proteins, visible within at 3200 m/z.</p>
+
+<p>A high-resolution mass spectrometer can distinguish between:</p>
+
+<p>However.</p>
+
+
+  </article>
 </div>
 
-    </article>
+<div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/articles/2016-06/ms" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/articles/2016-06/ms" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/articles/2016-06/ms" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://news.ycombinator.com/submitlink?u=/articles/2016-06/ms" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/articles/2016-06/ms" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div><!-- end share-buttons -->
 
 
-  </div><!-- end page content -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'rsfp';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
-  
 
         <footer>
   &copy; 2016 rsfp.  &nbsp;Powered by <a href="http://jekyllrb.com/">Jekyll</a>, based on <a href="http://github.com/renyuanz/leonids/">leonids</a> theme.

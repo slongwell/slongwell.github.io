@@ -5,8 +5,8 @@
     <description>Scott Longwell's webzone</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Oct 2016 19:26:00 -0700</pubDate>
-    <lastBuildDate>Thu, 20 Oct 2016 19:26:00 -0700</lastBuildDate>
+    <pubDate>Thu, 27 Oct 2016 00:14:15 -0700</pubDate>
+    <lastBuildDate>Thu, 27 Oct 2016 00:14:15 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -148,6 +148,46 @@
         <pubDate>Sun, 04 Sep 2016 18:06:19 -0700</pubDate>
         <link>/articles/2016-09/aliases</link>
         <guid isPermaLink="true">/articles/2016-09/aliases</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Here's</title>
+        <description>&lt;p&gt;Do you do top down proteomics?
+Do you see things that look like this?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://parsonsfamily.boldlygoingnowhere.org/~lparsons/upstate/massspec/Images/hhm-2min-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you can quickly estimate the mass of your protein with this formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;M = \frac{(x_2 - H^+)(x_1 - H^+)}{x_2-x_1}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;x_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;x_2&lt;/script&gt; are the &lt;script type=&quot;math/tex&quot;&gt;(m/z)&lt;/script&gt; of two adjacent peaks in the charge envelope.&lt;/p&gt;
+
+&lt;p&gt;For example, taking the two largest consecutive peaks above, we have:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x_1 = 998.37&lt;/script&gt; m/z&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;x_2 = 1060.65&lt;/script&gt; m/z&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;H^+ = 1.01&lt;/script&gt; m/z&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;M = \frac{(1060.65 - 1.01)(998.37 - 1.01)}{1060.65 - 998.37} = 16969.21&lt;/script&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;Want a better estimate?&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;z_1 = \frac{(x_2 - H^+)}{x_2-x_1} = \frac{(1060.65 - 1.01)}{1060.65 - 998.37} =&lt;/script&gt;
+
+&lt;p&gt;Electro-spray Ionization (ESI) sources tend to produce multiply charged ions. Small molecules (&lt;script type=&quot;math/tex&quot;&gt;\sim300&lt;/script&gt; m/z) typically give only 1-3 charges, but larger molecules can have dozens of charge states. This is in that it explodes things, reducing signal and making the spectrum more difficult to interpret. However, it can allow larger molecules, even 100 kDa proteins, visible within at 3200 m/z.&lt;/p&gt;
+
+&lt;p&gt;A high-resolution mass spectrometer can distinguish between:&lt;/p&gt;
+
+&lt;p&gt;However.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 02 Jun 2016 08:07:19 -0700</pubDate>
+        <link>/articles/2016-06/ms</link>
+        <guid isPermaLink="true">/articles/2016-06/ms</guid>
         
         
       </item>

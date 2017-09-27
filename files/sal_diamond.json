@@ -1,0 +1,101 @@
+{
+    "title": "SAL Diamond Cursor",
+    "rules": [
+        {
+            "description": "ctrl_r + IJKL to arrows; ctrl_r + o/semi to backspace/delete",
+            "manipulators": [
+
+            	{
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "right_control", "modifiers": ["right_option"]}]
+                },
+
+
+
+
+
+
+
+            	{
+                    "type": "basic",
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "delete_or_backspace"}]
+                },
+            	{
+                    "type": "basic",
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "delete_forward"}]
+                },
+
+
+
+
+
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "up_arrow"}]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "left_arrow"}]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "down_arrow"}]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{"key_code": "right_arrow"}]
+                }
+            ]
+        }
+    ]
+}
