@@ -16,23 +16,23 @@ To implement my favorite key mappings:
 
 1. Install the [latest version of K-E][ke_download]
 2. In `K-E > Simple Modifications`:
-	- remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>
-	- remap <kbd>CMD_R</kbd> to <kbd>Mission Control</kbd>
+* remap <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>
+* remap <kbd>CMD_R</kbd> to <kbd>Mission Control</kbd>
 3. Download my [`.json` config file][json]
 4. In `K-E > Complex Modifications`:
-	- Enable `ctrl_r + IJKL to arrows; ctrl_r + o/semi to backspace/delete`
+* Enable `ctrl_r + IJKL to arrows; ctrl_r + o/semi to backspace/delete`
 
 This will implement the following behavior:
 
 General remappings:
-- <kbd>CAPS</kbd> maps to <kbd>CTRL_R</kbd> 
-- <kbd>CMD_R</kbd> maps to <kbd>Mission Control</kbd>
+* <kbd>CAPS</kbd> maps to <kbd>CTRL_R</kbd> 
+* <kbd>CMD_R</kbd> maps to <kbd>Mission Control</kbd>
 
 When <kbd>CTRL_R</kbd> (i.e. <kbd>CAPS</kbd>) is held:
-- <kbd>f</kbd> maps to <kbd>OPT_R</kbd> when held (i.e. as a 'super-modifier')
-- <kbd>j-l-i-k</kbd> maps to <kbd>left-right-up-down</kbd> ('diamond-arrows')
-- <kbd>o</kbd> maps to <kbd>BKSP</kbd>
-- <kbd>;</kbd> maps to <kbd>DEL</kbd>
+* <kbd>f</kbd> maps to <kbd>OPT_R</kbd> when held (i.e. as a 'super-modifier')
+* <kbd>j-l-i-k</kbd> maps to <kbd>left-right-up-down</kbd> ('diamond-arrows')
+* <kbd>o</kbd> maps to <kbd>BKSP</kbd>
+* <kbd>;</kbd> maps to <kbd>DEL</kbd>
 
 My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate modifier for <kbd>CAPS</kbd> (I've struggled to get the remappings to work directly with <kbd>CAPS</kbd>). Holding <kbd>f</kbd> (<kbd>OPT</kbd>) in addition to <kbd>CAPS</kbd> has the effect of making arrows and deletes occur 'word-at-a-time', permitting faster navigation and editing (I term this an <kbd>OPT</kbd> 'super-modifier'). I find the <kbd>CMD_R</kbd> mapping to Mission Control is a great way to quickly switch windows and desktops. 
 
@@ -44,7 +44,7 @@ So far, this implementation has been bug-free for me and has the added benefit o
 
 [comp-mods]: https://github.com/pqrs-org/KE-complex_modifications
 [ke_download]: https://pqrs.org/osx/karabiner/index.html
-[json]: karabiner://karabiner/assets/complex_modifications/import?url=slongwell.github.io/files/sal-diamond.json
+[json]: karabiner://karabiner/assets/complex_modifications/import?url=/files/sal-diamond.json
 
 [private]: /files/private.xml
 [author]: https://pqrs.org/profile.html.en
