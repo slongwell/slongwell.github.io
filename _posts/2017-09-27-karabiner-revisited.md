@@ -45,7 +45,7 @@ So far, this implementation has been bug-free for me and has the added benefit o
 
 [comp-mods]: https://github.com/pqrs-org/KE-complex_modifications
 [ke_download]: https://pqrs.org/osx/karabiner/index.html
-[json]: karabiner://karabiner/assets/complex_modifications/import?url=https://slongwell.github.io/files/sal-diamond.json
+[json]: karabiner://karabiner/assets/complex_modifications/import?url=https://slongwell.github.io/files/sal_diamond.json
 
 [private]: /files/private.xml
 [author]: https://pqrs.org/profile.html
