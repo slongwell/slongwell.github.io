@@ -4,6 +4,8 @@ title:  "Karabiner is Karabroken on macOS Sierra. Here's a Temporary Solution."
 date:   2016-09-25 22:36:00
 comments: true
 ---
+Update: [Karabiner is back!][newpost]
+
 I've used [Karabiner][kb] for Mac to embed my arrow keys in a Diamond-style configuration - in other words, <kbd>j-l-i-k</kbd> maps to <kbd>left-right-up-down</kbd>. This configuration is active when the caps lock key is held. (*Note*: the [Seil][seil] utility is specifically required for remapping <kbd>CAPS</kbd>. I remapped <kbd>CAPS</kbd> to <kbd>CTRL_R</kbd>, which is not present on my MBP. Consequently, <kbd>CTRL_R</kbd> is technically the modifier key). I've similarly embedded <kbd>BKSP</kbd> and <kbd>DEL</kbd> as the <kbd>o</kbd> and <kbd>p</kbd> keys and added additional 'super-modifier' keys: <kbd>f</kbd> to signify 'word at a time' (e.g. <kbd>CAPS-f-j</kbd> jumps back a word), <kbd>d</kbd> to go to beginning/end of line, and <kbd>s</kbd> to highlight a selection. Karabiner can also detect the vendor ID associated with a connected keyboard, so it can apply specific remappings to specific keyboards (e.g. the command and option keys can be switched for a PC keyboard while leaving the bindings for the built-in MBP keyboard unaltered). Finally, I've been experimenting with using <kbd>CMD_R</kbd> as a key for exposing all windows and as a toggle key for switching between spaces using <kbd>j</kbd> and <kbd>l</kbd>. If you're curious about implementing any of these features, see my `private.xml` file [here][private].
 
 <!--more-->
@@ -105,3 +107,4 @@ See also:
 [b]: http://xahlee.info/kbd/osx_keybinding.html
 [c]: hhttp://www.cocoabits.com/KeyBindingsEditor/
 [d]: http://sbnes.livejournal.com/3725.html
+[newpost]: http://slongwell.github.io/articles/2017-09/karabiner-revisited
