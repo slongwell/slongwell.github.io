@@ -3,7 +3,7 @@ layout: post
 title:  "Karabiner is No Longer Karabroken on macOS Sierra. Here's what I normally do."
 date:   2017-09-27 11:00:00
 comments: true
-published: false
+published: true
 ---
 One year ago, I [posted][oldpost] how updating to macOS Sierra broke the existing implementation of Karabiner, disabling my beloved diamond-arrows keyboard layout. I detailed a janky initial fix (which failed to work within many programs, like PyCharm). Later, in the comments I included a download to a tweaked [.dmg][dmg] of Karabiner-Elements (K-E) that fixed those issues. However, I still experienced occassional hiccups with this solution, like stuck <kbd>CMD</kbd> key behavior, or worse, stuck keys at the login password prompt. I never got around to explaining the changes I made - mostly because I was hoping that K-E would have complete functionality soon.
 
