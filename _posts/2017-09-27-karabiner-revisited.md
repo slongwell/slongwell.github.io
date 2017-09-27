@@ -12,6 +12,7 @@ That day has come.
 <!--more-->
 In the old Karabiner, there was a [`private.xml`][private] that could be used to define intricate key remappings. Now that K-E has its first stable release (v11.0.0), this functionality has returned in the form of [Complex Modifications][comp-mods], which are defined with `.json` config files instead of a `.xml` file. These files are stored in `~/.config/karabiner/assets/complex_modifications`.
 
+***
 To implement my favorite key mappings:
 
 1. Install the [latest version of K-E][ke_download]
@@ -29,10 +30,10 @@ General remappings:
 * <kbd>CMD_R</kbd> maps to <kbd>Mission Control</kbd>
 
 When <kbd>CTRL_R</kbd> (i.e. <kbd>CAPS</kbd>) is held:
-* <kbd>f</kbd> maps to <kbd>OPT_R</kbd> when held (i.e. as a 'super-modifier')
-* <kbd>j-l-i-k</kbd> maps to <kbd>left-right-up-down</kbd> ('diamond-arrows')
-* <kbd>o</kbd> maps to <kbd>BKSP</kbd>
-* <kbd>;</kbd> maps to <kbd>DEL</kbd>
+* <kbd>f</kbd>  to  <kbd>OPT_R</kbd> when held (i.e. as a 'super-modifier')
+* <kbd>j-l-i-k</kbd>  to  <kbd>left-right-up-down</kbd> ('diamond-arrows')
+* <kbd>o</kbd>  to  <kbd>BKSP</kbd>
+* <kbd>;</kbd>  to  <kbd>DEL</kbd>
 
 My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate modifier for <kbd>CAPS</kbd> (I've struggled to get the remappings to work directly with <kbd>CAPS</kbd>). Holding <kbd>f</kbd> (<kbd>OPT</kbd>) in addition to <kbd>CAPS</kbd> has the effect of making arrows and deletes occur 'word-at-a-time', permitting faster navigation and editing (I term this an <kbd>OPT</kbd> 'super-modifier'). I find the <kbd>CMD_R</kbd> mapping to Mission Control is a great way to quickly switch windows and desktops. 
 
@@ -44,7 +45,7 @@ So far, this implementation has been bug-free for me and has the added benefit o
 
 [comp-mods]: https://github.com/pqrs-org/KE-complex_modifications
 [ke_download]: https://pqrs.org/osx/karabiner/index.html
-[json]: karabiner://karabiner/assets/complex_modifications/import?url=/files/sal-diamond.json
+[json]: karabiner://karabiner/assets/complex_modifications/import?url=http://slongwell.github.io/files/sal-diamond.xml
 
 [private]: /files/private.xml
-[author]: https://pqrs.org/profile.html.en
+[author]: https://pqrs.org/profile.html
