@@ -39,7 +39,7 @@ My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate m
 
 So far, this implementation has been bug-free for me and has the added benefit of compatibility with future K-E updates. In the future, I hope to add <kbd>s</kbd> as a <kbd>SHIFT</kbd> 'super-modifier', allowing easier highlighting with the diamond-arrow keys. Thanks again to the [author][author] of K-E for all his hard work!
 
-See also:
+See also:   
 [Hyper Key with Vim-arrows][hyper]
 
 #### Bonus:
