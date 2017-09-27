@@ -35,13 +35,15 @@ When <kbd>CTRL_R</kbd> (i.e. <kbd>CAPS</kbd>) is held:
 * <kbd>o</kbd>  to  <kbd>BKSP</kbd>
 * <kbd>;</kbd>  to  <kbd>DEL</kbd>
 
-My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate modifier for <kbd>CAPS</kbd> (I've struggled to get the mappings to work directly with <kbd>CAPS</kbd>). Holding <kbd>f</kbd> (<kbd>OPT</kbd>) in addition to <kbd>CAPS</kbd> has the effect of making arrows and deletes occur 'word-at-a-time', permitting faster navigation and editing (I term this an <kbd>OPT</kbd> 'super-modifier'). I find the <kbd>CMD_R</kbd> mapping to Mission Control is a great way to quickly switch windows and desktops. 
+My MBP lacks a <kbd>CTRL_R</kbd> key, which is why I use it as an intermediate modifier for <kbd>CAPS</kbd> (I've struggled to get the mappings to work directly with <kbd>CAPS</kbd>). Holding <kbd>f</kbd> (<kbd>OPT</kbd>) in addition to <kbd>CAPS</kbd> has the effect of making arrows and deletes occur 'word-at-a-time', permitting faster navigation and editing (I term this an <kbd>OPT</kbd> 'super-modifier', similar in concept to a 'hyper key'). I find the <kbd>CMD_R</kbd> mapping to Mission Control is a great way to quickly switch windows and desktops. 
 
 So far, this implementation has been bug-free for me and has the added benefit of compatibility with future K-E updates. In the future, I hope to add <kbd>s</kbd> as a <kbd>SHIFT</kbd> 'super-modifier', allowing easier highlighting with the diamond-arrow keys. Thanks again to the [author][author] of K-E for all his hard work!
 
+See also:
+[Hyper Key with Vim-arrows][hyper]
+
 #### Bonus:
 Have to use Windows? Me too. Use [AutoHotKey][ahk] with this [script][ahk-script] to get a similar remapping.
-
 
 [oldpost]: http://slongwell.github.io/articles/2016-09/karabiner-workaround
 [dmg]: http://disq.us/p/1eflhzc
@@ -55,3 +57,4 @@ Have to use Windows? Me too. Use [AutoHotKey][ahk] with this [script][ahk-script
 [ahk]: https://autohotkey.com/
 [ahk-script]: /files/sal_diamond.ahk
 
+[hyper]: http://brettterpstra.com/2017/07/26/hyper-key-vim-navigation-with-karabiner-elements/
