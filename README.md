@@ -1,3 +1,3 @@
 # Scott Longwell
 
-![](assets/longwell_photo.png)
+<img src="assets/longwell_photo.jpg" width="150">
