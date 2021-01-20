@@ -1,9 +1,7 @@
 title: "rsfp"
 
 
-
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
-logo: rsfp
 
-search_enabled: false
+search_enabled: true
