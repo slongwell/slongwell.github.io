@@ -1,4 +1,9 @@
 title: "rsfp"
+
+
+
 remote_theme: pmarsceill/just-the-docs
-color_scheme: "dark"
+color_scheme: dark
+logo: assets/interrobang.png
+
 search_enabled: false
